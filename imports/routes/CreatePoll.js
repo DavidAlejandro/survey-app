@@ -1,6 +1,8 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
+
+import SurveyForm from '../components/SurveyForm.js';
 import {
   Row,
   Col,
@@ -19,7 +21,8 @@ export default class CreatePoll extends React.Component {
             <Grid>
               <Row>
                 <Col xs={12}>
-                  <h3>Create a new poll</h3>
+                  <h3>Create a new Survey</h3>
+                  <SurveyForm/>
                 </Col>
               </Row>
             </Grid>

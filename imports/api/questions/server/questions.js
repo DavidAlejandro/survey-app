@@ -12,7 +12,7 @@ Meteor.publish('questionSet', ()=> {
 });
 
 Meteor.methods({
-  'questions.insert'(text=String, type=String, options=[]){
+  'questions.insert'(text="", type="", options=[]){
     check(text, String);
     check(type, String);
     check(options, Array);
